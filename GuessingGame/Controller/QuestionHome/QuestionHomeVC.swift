@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  QuestionHomeVC.swift
 //  GuessingGame
 //
 //  Created by Harpreet on 01/09/20.
@@ -8,13 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class QuestionHomeVC: AbstractController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
-

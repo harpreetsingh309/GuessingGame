@@ -2,9 +2,9 @@
 //  AppDelegate.swift
 //  GuessingGame
 //
-//  Created by macexpert on 01/09/20.
+//  Created by Harpreet on 01/09/20.
 //  Copyright © 2020 Harpreet. All rights reserved.
-//
+// com.hs.GuessingGame
 
 import UIKit
 
