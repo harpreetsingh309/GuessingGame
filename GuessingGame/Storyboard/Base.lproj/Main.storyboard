@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Question HomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GuessingGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuestionHomeVC" id="BYZ-38-t0r" customClass="QuestionHomeVC" customModule="GuessingGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,7 +52,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="dfF-yK-FXy"/>
                                                 </constraints>
-                                                <color key="progressTintColor" red="1" green="0.45854175089999999" blue="0.6605013609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="progressTintColor" red="0.78785508869999998" green="0.45684522389999999" blue="0.087011925879999993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="trackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </progressView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cS-2q-1BK" customClass="CustomButton" customModule="GuessingGame" customModuleProvider="target">
@@ -70,6 +70,9 @@
                                                         <real key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kWt-iP-bta"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQY-2m-lmI" customClass="CustomButton" customModule="GuessingGame" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="578" width="384" height="80"/>
@@ -86,6 +89,9 @@
                                                         <real key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xPt-xI-CeN"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Prn-2p-MMp" customClass="CustomButton" customModule="GuessingGame" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="668" width="384" height="80"/>
@@ -102,6 +108,9 @@
                                                         <real key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xAf-Ad-o6f"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WnB-k6-q9W" customClass="CustomButton" customModule="GuessingGame" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="758" width="384" height="40"/>
@@ -144,6 +153,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="progressBar" destination="pwU-kD-vAe" id="cad-SX-K1Y"/>
+                        <outlet property="questionBgView" destination="Z3q-4k-j0Z" id="cbQ-3e-IeV"/>
+                        <outlet property="questionImage" destination="tIL-Kb-gNd" id="7pJ-h2-8Ol"/>
+                        <outlet property="scoreLabel" destination="3KK-q3-x0m" id="1ux-i5-7Tg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F32C97C724FDD91A00C0FFE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C97C624FDD91A00C0FFE3 /* AppDelegate.swift */; };
 		F32C97C924FDD91A00C0FFE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C97C824FDD91A00C0FFE3 /* SceneDelegate.swift */; };
-		F32C97CB24FDD91A00C0FFE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C97CA24FDD91A00C0FFE3 /* ViewController.swift */; };
 		F32C97CE24FDD91A00C0FFE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32C97CC24FDD91A00C0FFE3 /* Main.storyboard */; };
 		F32C97D024FDD91F00C0FFE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F32C97CF24FDD91F00C0FFE3 /* Assets.xcassets */; };
 		F32C97D324FDD91F00C0FFE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32C97D124FDD91F00C0FFE3 /* LaunchScreen.storyboard */; };
@@ -18,13 +17,20 @@
 		F32C97E524FE30B700C0FFE3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C97E424FE30B700C0FFE3 /* Extensions.swift */; };
 		F32C97EA24FE649F00C0FFE3 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C97E924FE649F00C0FFE3 /* CustomButton.swift */; };
 		F32C97ED24FE67B100C0FFE3 /* QuestionHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C97EC24FE67B100C0FFE3 /* QuestionHomeVC.swift */; };
+		F32C97EF24FE6BEC00C0FFE3 /* WebServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C97EE24FE6BEC00C0FFE3 /* WebServiceModel.swift */; };
+		F32C97F124FE6F6000C0FFE3 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C97F024FE6F6000C0FFE3 /* Alert.swift */; };
+		F32C97F324FE729600C0FFE3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C97F224FE729600C0FFE3 /* Constants.swift */; };
+		F32C97F524FE752500C0FFE3 /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C97F424FE752500C0FFE3 /* QuestionModel.swift */; };
+		F32C97F824FE774700C0FFE3 /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = F32C97F724FE774700C0FFE3 /* NVActivityIndicatorView */; };
+		F32C97FA24FE774700C0FFE3 /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = F32C97F924FE774700C0FFE3 /* NVActivityIndicatorViewExtended */; };
+		F32C97FD24FE7E2500C0FFE3 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F32C97FC24FE7E2500C0FFE3 /* SDWebImage */; };
+		F32C97FF24FE7E2500C0FFE3 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F32C97FE24FE7E2500C0FFE3 /* SDWebImageMapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F32C97C324FDD91A00C0FFE3 /* GuessingGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessingGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32C97C624FDD91A00C0FFE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F32C97C824FDD91A00C0FFE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F32C97CA24FDD91A00C0FFE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F32C97CD24FDD91A00C0FFE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F32C97CF24FDD91F00C0FFE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F32C97D224FDD91F00C0FFE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -33,6 +39,10 @@
 		F32C97E424FE30B700C0FFE3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F32C97E924FE649F00C0FFE3 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		F32C97EC24FE67B100C0FFE3 /* QuestionHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionHomeVC.swift; sourceTree = "<group>"; };
+		F32C97EE24FE6BEC00C0FFE3 /* WebServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceModel.swift; sourceTree = "<group>"; };
+		F32C97F024FE6F6000C0FFE3 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		F32C97F224FE729600C0FFE3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F32C97F424FE752500C0FFE3 /* QuestionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +50,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F32C97FA24FE774700C0FFE3 /* NVActivityIndicatorViewExtended in Frameworks */,
+				F32C97FF24FE7E2500C0FFE3 /* SDWebImageMapKit in Frameworks */,
+				F32C97F824FE774700C0FFE3 /* NVActivityIndicatorView in Frameworks */,
+				F32C97FD24FE7E2500C0FFE3 /* SDWebImage in Frameworks */,
 				F32C97DC24FE2D0500C0FFE3 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,7 +82,6 @@
 			children = (
 				F32C97C624FDD91A00C0FFE3 /* AppDelegate.swift */,
 				F32C97C824FDD91A00C0FFE3 /* SceneDelegate.swift */,
-				F32C97CA24FDD91A00C0FFE3 /* ViewController.swift */,
 				F32C97E824FE3B9D00C0FFE3 /* Storyboard */,
 				F32C97E724FE3B8200C0FFE3 /* QuestionModule */,
 				F32C97E024FE2EBD00C0FFE3 /* Model */,
@@ -110,6 +123,8 @@
 		F32C97E024FE2EBD00C0FFE3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F32C97F424FE752500C0FFE3 /* QuestionModel.swift */,
+				F32C97EE24FE6BEC00C0FFE3 /* WebServiceModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -119,6 +134,8 @@
 			children = (
 				F32C97E424FE30B700C0FFE3 /* Extensions.swift */,
 				F32C97E924FE649F00C0FFE3 /* CustomButton.swift */,
+				F32C97F024FE6F6000C0FFE3 /* Alert.swift */,
+				F32C97F224FE729600C0FFE3 /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -171,6 +188,10 @@
 			name = GuessingGame;
 			packageProductDependencies = (
 				F32C97DB24FE2D0500C0FFE3 /* Alamofire */,
+				F32C97F724FE774700C0FFE3 /* NVActivityIndicatorView */,
+				F32C97F924FE774700C0FFE3 /* NVActivityIndicatorViewExtended */,
+				F32C97FC24FE7E2500C0FFE3 /* SDWebImage */,
+				F32C97FE24FE7E2500C0FFE3 /* SDWebImageMapKit */,
 			);
 			productName = GuessingGame;
 			productReference = F32C97C324FDD91A00C0FFE3 /* GuessingGame.app */;
@@ -202,6 +223,8 @@
 			mainGroup = F32C97BA24FDD91A00C0FFE3;
 			packageReferences = (
 				F32C97DA24FE2D0500C0FFE3 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F32C97F624FE774700C0FFE3 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+				F32C97FB24FE7E2500C0FFE3 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = F32C97C424FDD91A00C0FFE3 /* Products */;
 			projectDirPath = "";
@@ -230,9 +253,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F32C97F124FE6F6000C0FFE3 /* Alert.swift in Sources */,
+				F32C97EF24FE6BEC00C0FFE3 /* WebServiceModel.swift in Sources */,
+				F32C97F524FE752500C0FFE3 /* QuestionModel.swift in Sources */,
 				F32C97ED24FE67B100C0FFE3 /* QuestionHomeVC.swift in Sources */,
 				F32C97E524FE30B700C0FFE3 /* Extensions.swift in Sources */,
-				F32C97CB24FDD91A00C0FFE3 /* ViewController.swift in Sources */,
+				F32C97F324FE729600C0FFE3 /* Constants.swift in Sources */,
 				F32C97EA24FE649F00C0FFE3 /* CustomButton.swift in Sources */,
 				F32C97C724FDD91A00C0FFE3 /* AppDelegate.swift in Sources */,
 				F32C97C924FDD91A00C0FFE3 /* SceneDelegate.swift in Sources */,
@@ -452,6 +478,22 @@
 				minimumVersion = 5.2.2;
 			};
 		};
+		F32C97F624FE774700C0FFE3 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		F32C97FB24FE7E2500C0FFE3 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -459,6 +501,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F32C97DA24FE2D0500C0FFE3 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		F32C97F724FE774700C0FFE3 /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F32C97F624FE774700C0FFE3 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+		F32C97F924FE774700C0FFE3 /* NVActivityIndicatorViewExtended */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F32C97F624FE774700C0FFE3 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorViewExtended;
+		};
+		F32C97FC24FE7E2500C0FFE3 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F32C97FB24FE7E2500C0FFE3 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		F32C97FE24FE7E2500C0FFE3 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F32C97FB24FE7E2500C0FFE3 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
