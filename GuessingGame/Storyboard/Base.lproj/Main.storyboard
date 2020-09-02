@@ -52,7 +52,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="dfF-yK-FXy"/>
                                                 </constraints>
-                                                <color key="progressTintColor" red="0.78785508869999998" green="0.45684522389999999" blue="0.087011925879999993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="progressTintColor" red="0.22599068280000001" green="0.74456721540000004" blue="0.90982931850000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="trackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </progressView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="9cS-2q-1BK" customClass="CustomButton" customModule="GuessingGame" customModuleProvider="target">
@@ -161,7 +161,7 @@
                                                 <rect key="frame" x="0.0" y="25" width="384" height="663"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlK-hi-0TT" customClass="CustomButton" customModule="GuessingGame" customModuleProvider="target">
-                                                        <rect key="frame" x="224" y="513" width="160" height="40"/>
+                                                        <rect key="frame" x="224" y="493" width="160" height="40"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="DuP-5c-0vc"/>
@@ -176,27 +176,30 @@
                                                                 <real key="value" value="5"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="readArticleBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="glh-i9-Cj9"/>
+                                                        </connections>
                                                     </button>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oYv-w8-7T4" customClass="CustomView" customModule="GuessingGame" customModuleProvider="target">
-                                                        <rect key="frame" x="77" y="0.0" width="230" height="230"/>
+                                                        <rect key="frame" x="87" y="0.0" width="210" height="210"/>
                                                         <subviews>
                                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V0O-pA-KAz" customClass="CustomView" customModule="GuessingGame" customModuleProvider="target">
-                                                                <rect key="frame" x="20" y="20" width="190" height="190"/>
+                                                                <rect key="frame" x="15" y="15" width="180" height="180"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7CN-rF-sML">
-                                                                        <rect key="frame" x="10" y="10" width="170" height="155"/>
+                                                                        <rect key="frame" x="10" y="25" width="160" height="130"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="THAT's RIGHT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lx8-JN-EcR">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="170" height="70"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="160" height="45"/>
                                                                                 <constraints>
-                                                                                    <constraint firstAttribute="height" constant="70" id="bEa-dQ-VAP"/>
+                                                                                    <constraint firstAttribute="height" constant="45" id="bEa-dQ-VAP"/>
                                                                                 </constraints>
                                                                                 <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="20"/>
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gf-lz-TZ3">
-                                                                                <rect key="frame" x="0.0" y="70" width="170" height="2"/>
+                                                                                <rect key="frame" x="0.0" y="45" width="160" height="2"/>
                                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="2" id="5qr-pW-KUF"/>
@@ -206,7 +209,7 @@
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="YOU HAVE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ycu-Au-d8f">
-                                                                                <rect key="frame" x="0.0" y="72" width="170" height="40"/>
+                                                                                <rect key="frame" x="0.0" y="47" width="160" height="40"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="40" id="bMn-U4-GUo"/>
                                                                                 </constraints>
@@ -215,7 +218,7 @@
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCm-46-8Zl">
-                                                                                <rect key="frame" x="0.0" y="112" width="170" height="41"/>
+                                                                                <rect key="frame" x="0.0" y="87" width="160" height="41"/>
                                                                                 <attributedString key="attributedText">
                                                                                     <fragment content="8">
                                                                                         <attributes>
@@ -225,10 +228,17 @@
                                                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                                         </attributes>
                                                                                     </fragment>
-                                                                                    <fragment content=" POINTS">
+                                                                                    <fragment content=" ">
                                                                                         <attributes>
                                                                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                             <font key="NSFont" size="20" name="GillSans-SemiBold"/>
+                                                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="POINTS">
+                                                                                        <attributes>
+                                                                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                            <font key="NSFont" size="16" name="GillSans-SemiBold"/>
                                                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                                         </attributes>
                                                                                     </fragment>
@@ -236,7 +246,7 @@
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dup-qn-WFU">
-                                                                                <rect key="frame" x="0.0" y="153" width="170" height="2"/>
+                                                                                <rect key="frame" x="0.0" y="128" width="160" height="2"/>
                                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="2" id="9eJ-cy-rnl"/>
@@ -251,13 +261,13 @@
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstItem="7CN-rF-sML" firstAttribute="leading" secondItem="V0O-pA-KAz" secondAttribute="leading" constant="10" id="2cy-Vt-SLV"/>
-                                                                    <constraint firstItem="7CN-rF-sML" firstAttribute="top" secondItem="V0O-pA-KAz" secondAttribute="top" constant="10" id="Cz4-Gy-ega"/>
+                                                                    <constraint firstItem="7CN-rF-sML" firstAttribute="top" secondItem="V0O-pA-KAz" secondAttribute="top" constant="25" id="Cz4-Gy-ega"/>
                                                                     <constraint firstAttribute="bottom" secondItem="7CN-rF-sML" secondAttribute="bottom" constant="25" id="FGi-BK-gfz"/>
                                                                     <constraint firstAttribute="trailing" secondItem="7CN-rF-sML" secondAttribute="trailing" constant="10" id="Lcn-Wm-gW0"/>
                                                                 </constraints>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                        <real key="value" value="95"/>
+                                                                        <real key="value" value="90"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                                         <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -270,21 +280,21 @@
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.14637109640000001" green="0.7488460464830986" blue="0.89398950340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="230" id="2Ng-ZC-YS2"/>
-                                                            <constraint firstItem="V0O-pA-KAz" firstAttribute="top" secondItem="oYv-w8-7T4" secondAttribute="top" constant="20" id="3t3-W4-Rrl"/>
-                                                            <constraint firstAttribute="height" constant="230" id="Idh-Eq-FVg"/>
-                                                            <constraint firstItem="V0O-pA-KAz" firstAttribute="leading" secondItem="oYv-w8-7T4" secondAttribute="leading" constant="20" id="mIk-LE-YO9"/>
-                                                            <constraint firstAttribute="bottom" secondItem="V0O-pA-KAz" secondAttribute="bottom" constant="20" id="oda-1g-uuK"/>
-                                                            <constraint firstAttribute="trailing" secondItem="V0O-pA-KAz" secondAttribute="trailing" constant="20" id="wau-iK-G5b"/>
+                                                            <constraint firstAttribute="width" constant="210" id="2Ng-ZC-YS2"/>
+                                                            <constraint firstItem="V0O-pA-KAz" firstAttribute="top" secondItem="oYv-w8-7T4" secondAttribute="top" constant="15" id="3t3-W4-Rrl"/>
+                                                            <constraint firstAttribute="height" constant="210" id="Idh-Eq-FVg"/>
+                                                            <constraint firstItem="V0O-pA-KAz" firstAttribute="leading" secondItem="oYv-w8-7T4" secondAttribute="leading" constant="15" id="mIk-LE-YO9"/>
+                                                            <constraint firstAttribute="bottom" secondItem="V0O-pA-KAz" secondAttribute="bottom" constant="15" id="oda-1g-uuK"/>
+                                                            <constraint firstAttribute="trailing" secondItem="V0O-pA-KAz" secondAttribute="trailing" constant="15" id="wau-iK-G5b"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="115"/>
+                                                                <real key="value" value="105"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZEb-hu-qut" customClass="CustomView" customModule="GuessingGame" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="265" width="384" height="240"/>
+                                                        <rect key="frame" x="0.0" y="245" width="384" height="240"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo" translatesAutoresizingMaskIntoConstraints="NO" id="5gG-TC-fzc">
                                                                 <rect key="frame" x="0.0" y="0.0" width="384" height="130"/>
@@ -470,7 +480,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic_bg" width="607" height="1000"/>
+        <image name="ic_bg" width="500" height="567"/>
         <image name="ic_logo" width="1024" height="1024"/>
     </resources>
 </document>

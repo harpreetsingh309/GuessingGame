@@ -19,7 +19,7 @@ class WebServiceModel: NSObject {
     
     class func getDataFromServer<T:Decodable>(completion: @escaping (T) -> (), failure: @escaping(String)->()) {
         if WebServiceModel.isReachable {
-            let loader = NVActivityIndicatorView(frame: CGRect(x: UIScreen.main.bounds.width/2-50, y: UIScreen.main.bounds.height/2-50, width: 100, height: 100), type: .ballClipRotateMultiple, color: .black, padding: 20.0)
+            let loader = NVActivityIndicatorView(frame: CGRect(x: UIScreen.main.bounds.width/2-50, y: UIScreen.main.bounds.height/2-50, width: 100, height: 100), type: .ballClipRotateMultiple, color: .white, padding: 20.0)
             UIApplication.scene.view.addSubview(loader)
             loader.startAnimating()
             var url = "\(Constants.baseUrl)"

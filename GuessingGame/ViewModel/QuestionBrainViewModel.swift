@@ -16,15 +16,28 @@ struct QuestionBrainViewModel {
     var arrQuestions: [Items]!
     
     func getQuestionImage() -> String {
-        return arrQuestions[questionNumber].imageUrl!
+        if let url = arrQuestions[questionNumber].imageUrl {
+            return url
+        }
+        return ""
     }
     
     func getHeadlines() -> [String] {
-        return arrQuestions[questionNumber].headlines!
+        if let arrStr = arrQuestions[questionNumber].headlines {
+            return arrStr
+        }
+        return [""]
     }
     
     func getHeadlineSection() -> String {
-        return arrQuestions[questionNumber].section!
+        if let str = arrQuestions[questionNumber].section {
+            return str
+        }
+        return ""
+    }
+    
+    func getCurrentItem() -> Items {
+        return arrQuestions[questionNumber]
     }
     
     func getProgress() -> Float {

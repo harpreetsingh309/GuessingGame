@@ -19,7 +19,6 @@ class QuestionHomeVC: AbstractController {
     @IBOutlet weak var firstHeadlineBtn: UIButton!
     @IBOutlet weak var secondHeadlineBtn: UIButton!
     @IBOutlet weak var thirdHeadlineBtn: UIButton!
-    var arrayItems: [Items]?
     var quesBrain = QuestionBrainViewModel()
     var answerTag = 0
     
@@ -37,6 +36,7 @@ class QuestionHomeVC: AbstractController {
         getAllQuestionAns()
     }
     
+    //MARK: - Actions
     @IBAction func answerButtonAction(_ sender: UIButton) {
         let userGotItRight = quesBrain.checkAnswer(userAnswer: sender.tag)
         if userGotItRight {
@@ -55,21 +55,12 @@ class QuestionHomeVC: AbstractController {
         goToNextQues()
     }
     
-    
-    //MARK: - Server Data
-    func getAllQuestionAns() {
-        WebServiceModel.getDataFromServer(completion: { (model : QuestionModel) in
-                if let item = model.items, item.count > 0 {
-                    self.quesBrain.arrQuestions = item
-                    self.updateUI()
-                } else {
-                    Alert.show("No data found")
-                }
-        }) { (msg) in
-            Alert.show(msg)
-        }
+    @IBAction func readArticleBtnAction(_ sender: UIButton) {
+        guard let url = URL(string:quesBrain.getCurrentItem().storyUrl! ) else { return }
+        UIApplication.shared.open(url)
     }
     
+   //MARK: - Methods
     func goToNextQues() {
         answerBgView.isHidden = true
         questionBgView.isHidden = false
@@ -85,7 +76,7 @@ class QuestionHomeVC: AbstractController {
     }
     
    @objc func updateUI() {
-        questionBgView.isHidden = false
+        setView(view: questionBgView, hidden: false)
         questionImage.sd_setImage(with: URL(string: quesBrain.getQuestionImage()), placeholderImage: #imageLiteral(resourceName: "ic_logo"))
         progressBar.progress = quesBrain.getProgress()
         scoreLabel.text = "\(quesBrain.getScore()) point coming your way"
@@ -95,11 +86,32 @@ class QuestionHomeVC: AbstractController {
     }
     
     func setAnserUI() {
-        answerBgView.isHidden = false
+        setView(view: answerBgView, hidden: false)
         questionBgView.isHidden = true
         answerImage.sd_setImage(with: URL(string: quesBrain.getQuestionImage()), placeholderImage: #imageLiteral(resourceName: "ic_logo"))
-        answerScoreLbl.text = "\(quesBrain.getScore()) POINTS"
+        answerScoreLbl.attributedText = "".getAttrString(score:"\(quesBrain.getScore())", str: " POINTS")
         answerHeadlineLbl.text = quesBrain.getHeadlines()[answerTag]
-        answerSectionLbl.text = quesBrain.getHeadlineSection()
+        answerSectionLbl.text = quesBrain.getHeadlineSection().uppercased()
+    }
+    
+    //MARK: - Server Data
+       func getAllQuestionAns() {
+           WebServiceModel.getDataFromServer(completion: { (model : QuestionModel) in
+                   if let item = model.items, item.count > 0 {
+                       self.quesBrain.arrQuestions = item
+                       self.updateUI()
+                   } else {
+                       Alert.show("No data found")
+                   }
+           }) { (msg) in
+               Alert.show(msg)
+           }
+       }
+   
+    //MARK: - Animation
+    func setView(view: UIView, hidden: Bool) {
+        UIView.transition(with: view, duration: 0.7, options: .transitionCrossDissolve, animations: {
+            view.isHidden = hidden
+        })
     }
 }

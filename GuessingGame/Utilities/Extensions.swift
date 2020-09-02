@@ -79,3 +79,17 @@ extension UIAlertController {
         }
     }
 }
+
+
+// MARK: - String
+extension String {
+    
+    func getAttrString(score: String, str: String) -> NSAttributedString {
+        let scoreAttr = [NSAttributedString.Key.font: UIFont(name: "GillSans-SemiBold", size: 36.0)! ]
+        let pointAttr = [NSAttributedString.Key.font: UIFont(name: "Gill Sans", size: 20.0)! ]
+        let myString = NSMutableAttributedString(string: score, attributes: scoreAttr)
+        let attrString = NSMutableAttributedString(string: str, attributes: pointAttr)
+        myString.append(attrString)
+        return myString
+    }
+}
