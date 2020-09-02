@@ -400,7 +400,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hs.GuessingGame;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kom.Speedie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = speedie_dev;
 				SWIFT_VERSION = 5.0;
@@ -422,7 +422,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hs.GuessingGame;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kom.Speedie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = speedie_dev;
 				SWIFT_VERSION = 5.0;

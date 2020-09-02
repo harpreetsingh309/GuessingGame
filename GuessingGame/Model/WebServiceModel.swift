@@ -34,7 +34,7 @@ class WebServiceModel: NSObject {
                         let userModel = try JSONDecoder().decode(T.self, from: data)
                         completion(userModel)
                     }catch let error {
-                        Alert.show(Errors.noInternet)
+                        Alert.show(Errors.serverError)
                         failure(error.localizedDescription)
                     }
                     return

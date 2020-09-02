@@ -4,7 +4,7 @@
 //
 //  Created by Harpreet on 01/09/20.
 //  Copyright © 2020 Harpreet. All rights reserved.
-//  com.kom.Speedie
+// com.hs.GuessingGame com.kom.Speedie
 
 import UIKit
 

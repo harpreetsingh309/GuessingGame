@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// Abstraction controller is for adding things that are essential for all view controller classes and don't need to re-write the code.
 class AbstractController: UIViewController {
     
     var model: AnyObject!
