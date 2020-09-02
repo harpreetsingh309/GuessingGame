@@ -11,7 +11,6 @@ import UIKit
 class CustomButton: UIButton {
 
     // MARK: - IBInspectable properties
-    /// Corner radius of the view
     @IBInspectable public var cornerRadius: CGFloat = 0 {
         didSet {
             updateUI()

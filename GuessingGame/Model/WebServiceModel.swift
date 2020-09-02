@@ -25,7 +25,7 @@ class WebServiceModel: NSObject {
             var url = "\(Constants.baseUrl)"
             url = url.replacingOccurrences(of: " ", with: "%20")
             AF.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default , headers: [:]).responseJSON { (response:AFDataResponse<Any>) in
-                print(response)
+               // print(response)
                 loader.stopAnimating()
                 switch response.result{
                 case .success(_):
@@ -43,6 +43,10 @@ class WebServiceModel: NSObject {
                     Alert.show(Errors.serverError)
                     return
                 }
+            }
+        } else {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                Alert.show(Errors.noInternet)
             }
         }
     }

@@ -152,13 +152,13 @@
                                         <rect key="frame" x="15" y="0.0" width="384" height="808"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQX-xE-eTj">
-                                                <rect key="frame" x="0.0" y="0.0" width="384" height="15"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="384" height="23"/>
                                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mXu-uZ-qB5">
-                                                <rect key="frame" x="0.0" y="25" width="384" height="663"/>
+                                                <rect key="frame" x="0.0" y="33" width="384" height="655"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlK-hi-0TT" customClass="CustomButton" customModule="GuessingGame" customModuleProvider="target">
                                                         <rect key="frame" x="224" y="493" width="160" height="40"/>
@@ -312,8 +312,8 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Dialy Entertainment" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MO0-HM-KSh">
-                                                                <rect key="frame" x="273.5" y="216" width="105.5" height="15"/>
-                                                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="13"/>
+                                                                <rect key="frame" x="270" y="217" width="109" height="14"/>
+                                                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="12"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -462,21 +462,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="93.080357142857139"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="gBu-zr-p7E">
-            <objects>
-                <viewController id="061-tS-Btc" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="olI-jz-yuL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="QBc-Ra-Efp"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sTK-Rd-2NN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="813.04347826086962" y="99.776785714285708"/>
         </scene>
     </scenes>
     <resources>

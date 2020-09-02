@@ -26,7 +26,7 @@ class AbstractController: UIViewController {
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        addObserverForAppState()
+      //  addObserverForAppState()
     }
     
     func addObserverForAppState() {
