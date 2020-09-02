@@ -44,8 +44,10 @@ class QuestionHomeVC: AbstractController {
         let userGotItRight = quesBrain.checkAnswer(userAnswer: sender.tag)
         if userGotItRight {
             answerTag = sender.tag
-            setAnswerUI()
+            sender.backgroundColor = UIColor.green
+            Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(setAnswerUI), userInfo: nil, repeats: false)
         } else {
+            sender.backgroundColor = UIColor.red
             goToNextQues()
         }
     }
@@ -55,7 +57,7 @@ class QuestionHomeVC: AbstractController {
     }
     
     @IBAction func nextQuesBtnAction(_ sender: UIButton) {
-        goToNextQues()
+        goToNextQues(isNext: true)
     }
     
     @IBAction func readArticleBtnAction(_ sender: UIButton) {
@@ -63,17 +65,22 @@ class QuestionHomeVC: AbstractController {
             guard let url = URL(string:url ) else { return }
             UIApplication.shared.open(url)
         } else {
-            Alert.show("")
+            Alert.show(Errors.noURlFound)
         }
     }
     
    //MARK: - Methods
     /// Skip, next or wrong answer and update question UI
-    func goToNextQues() {
-        answerBgView.isHidden = true
-        questionBgView.isHidden = false
+    func goToNextQues(isNext: Bool = false) {
         quesBrain.nextQuestion()
-        Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(updateQuesUI), userInfo: nil, repeats: false)
+        if isNext {
+            setView(view: answerBgView, hidden: true)
+            updateQuesUI()
+        } else {
+            answerBgView.isHidden = true
+            Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(updateQuesUI), userInfo: nil, repeats: false)
+        }
+        questionBgView.isHidden = false
     }
     
     /// Initiate when view did load
@@ -90,7 +97,10 @@ class QuestionHomeVC: AbstractController {
         questionImage.sd_setImage(with: URL(string: quesBrain.getQuestionImage()), placeholderImage: #imageLiteral(resourceName: "ic_logo"))
         progressBar.progress = quesBrain.getProgress()
         scoreLabel.text = "\(quesBrain.getScore()) point coming your way"
-        
+        firstHeadlineBtn.backgroundColor = .white
+        secondHeadlineBtn.backgroundColor = .white
+        thirdHeadlineBtn.backgroundColor = .white
+
         for (index,value) in quesBrain.getHeadlines().enumerated() {
             switch index {
             case 0:
@@ -105,8 +115,8 @@ class QuestionHomeVC: AbstractController {
     }
     
     /// Call when answer is correct and update answer UI
-    func setAnswerUI() {
-        setView(view: answerBgView, hidden: false)
+   @objc func setAnswerUI() {
+    setView(view: answerBgView, hidden: false)
         questionBgView.isHidden = true
         answerImage.sd_setImage(with: URL(string: quesBrain.getQuestionImage()), placeholderImage: #imageLiteral(resourceName: "ic_logo"))
         answerScoreLbl.attributedText = "".getAttrString(score:"\(quesBrain.getScore())", str: " POINTS")

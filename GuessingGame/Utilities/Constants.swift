@@ -15,4 +15,5 @@ struct Constants {
 struct Errors {
     static let noInternet = "The Internet connection appears to be offline."
     static let serverError = "Internal Server error ocurred, try again after some time"
+    static let noURlFound = "Url not found!"
 }
