@@ -55,13 +55,14 @@
                                                 <color key="progressTintColor" red="0.78785508869999998" green="0.45684522389999999" blue="0.087011925879999993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="trackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </progressView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cS-2q-1BK" customClass="CustomButton" customModule="GuessingGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="9cS-2q-1BK" customClass="CustomButton" customModule="GuessingGame" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="488" width="384" height="80"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="nkA-b2-uub"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
                                                 <state key="normal" title="True">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -71,16 +72,17 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kWt-iP-bta"/>
+                                                    <action selector="answerButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mG0-kB-Cpy"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQY-2m-lmI" customClass="CustomButton" customModule="GuessingGame" customModuleProvider="target">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="vQY-2m-lmI" customClass="CustomButton" customModule="GuessingGame" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="578" width="384" height="80"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="S1J-DB-dmn"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
                                                 <state key="normal" title="True">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -90,16 +92,17 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xPt-xI-CeN"/>
+                                                    <action selector="answerButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qct-qi-EC3"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Prn-2p-MMp" customClass="CustomButton" customModule="GuessingGame" customModuleProvider="target">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Prn-2p-MMp" customClass="CustomButton" customModule="GuessingGame" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="668" width="384" height="80"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="Rzu-ue-TdE"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
                                                 <state key="normal" title="False">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -109,7 +112,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xAf-Ad-o6f"/>
+                                                    <action selector="answerButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HWU-aO-5e2"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WnB-k6-q9W" customClass="CustomButton" customModule="GuessingGame" customModuleProvider="target">
@@ -127,6 +130,9 @@
                                                         <real key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="skipQuesBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PvS-By-lCd"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -139,14 +145,289 @@
                                     <constraint firstAttribute="trailing" secondItem="Xsu-M8-IkT" secondAttribute="trailing" constant="15" id="ldU-yr-eX1"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wFN-S2-3uG">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="086-XR-clp">
+                                        <rect key="frame" x="15" y="0.0" width="384" height="808"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQX-xE-eTj">
+                                                <rect key="frame" x="0.0" y="0.0" width="384" height="15"/>
+                                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mXu-uZ-qB5">
+                                                <rect key="frame" x="0.0" y="25" width="384" height="663"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlK-hi-0TT" customClass="CustomButton" customModule="GuessingGame" customModuleProvider="target">
+                                                        <rect key="frame" x="224" y="513" width="160" height="40"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="DuP-5c-0vc"/>
+                                                            <constraint firstAttribute="width" constant="160" id="uFG-b0-S6M"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                                        <state key="normal" title="Read Article">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oYv-w8-7T4" customClass="CustomView" customModule="GuessingGame" customModuleProvider="target">
+                                                        <rect key="frame" x="77" y="0.0" width="230" height="230"/>
+                                                        <subviews>
+                                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V0O-pA-KAz" customClass="CustomView" customModule="GuessingGame" customModuleProvider="target">
+                                                                <rect key="frame" x="20" y="20" width="190" height="190"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7CN-rF-sML">
+                                                                        <rect key="frame" x="10" y="10" width="170" height="155"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="THAT's RIGHT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lx8-JN-EcR">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="170" height="70"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="70" id="bEa-dQ-VAP"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="20"/>
+                                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gf-lz-TZ3">
+                                                                                <rect key="frame" x="0.0" y="70" width="170" height="2"/>
+                                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="2" id="5qr-pW-KUF"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="20"/>
+                                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="YOU HAVE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ycu-Au-d8f">
+                                                                                <rect key="frame" x="0.0" y="72" width="170" height="40"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="40" id="bMn-U4-GUo"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="20"/>
+                                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCm-46-8Zl">
+                                                                                <rect key="frame" x="0.0" y="112" width="170" height="41"/>
+                                                                                <attributedString key="attributedText">
+                                                                                    <fragment content="8">
+                                                                                        <attributes>
+                                                                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                            <font key="NSFont" size="36" name="GillSans-Bold"/>
+                                                                                            <font key="NSOriginalFont" size="24" name="GillSans-Bold"/>
+                                                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content=" POINTS">
+                                                                                        <attributes>
+                                                                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                            <font key="NSFont" size="20" name="GillSans-SemiBold"/>
+                                                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                </attributedString>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dup-qn-WFU">
+                                                                                <rect key="frame" x="0.0" y="153" width="170" height="2"/>
+                                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="2" id="9eJ-cy-rnl"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="13"/>
+                                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="7CN-rF-sML" firstAttribute="leading" secondItem="V0O-pA-KAz" secondAttribute="leading" constant="10" id="2cy-Vt-SLV"/>
+                                                                    <constraint firstItem="7CN-rF-sML" firstAttribute="top" secondItem="V0O-pA-KAz" secondAttribute="top" constant="10" id="Cz4-Gy-ega"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="7CN-rF-sML" secondAttribute="bottom" constant="25" id="FGi-BK-gfz"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="7CN-rF-sML" secondAttribute="trailing" constant="10" id="Lcn-Wm-gW0"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="95"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="2"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.14637109640000001" green="0.7488460464830986" blue="0.89398950340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="230" id="2Ng-ZC-YS2"/>
+                                                            <constraint firstItem="V0O-pA-KAz" firstAttribute="top" secondItem="oYv-w8-7T4" secondAttribute="top" constant="20" id="3t3-W4-Rrl"/>
+                                                            <constraint firstAttribute="height" constant="230" id="Idh-Eq-FVg"/>
+                                                            <constraint firstItem="V0O-pA-KAz" firstAttribute="leading" secondItem="oYv-w8-7T4" secondAttribute="leading" constant="20" id="mIk-LE-YO9"/>
+                                                            <constraint firstAttribute="bottom" secondItem="V0O-pA-KAz" secondAttribute="bottom" constant="20" id="oda-1g-uuK"/>
+                                                            <constraint firstAttribute="trailing" secondItem="V0O-pA-KAz" secondAttribute="trailing" constant="20" id="wau-iK-G5b"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="115"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZEb-hu-qut" customClass="CustomView" customModule="GuessingGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="265" width="384" height="240"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo" translatesAutoresizingMaskIntoConstraints="NO" id="5gG-TC-fzc">
+                                                                <rect key="frame" x="0.0" y="0.0" width="384" height="130"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="130" id="G0b-WO-MaV"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Pete Evans activates his primitive instinct Pete Evans activates his primitive instinct" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDC-mZ-pRs">
+                                                                <rect key="frame" x="8" y="135" width="368" height="46"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="46" id="ZXK-YP-4M6"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Dialy Entertainment" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MO0-HM-KSh">
+                                                                <rect key="frame" x="273.5" y="216" width="105.5" height="15"/>
+                                                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="13"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="It's so simple, yet so awesome." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SB0-ge-RNH">
+                                                                <rect key="frame" x="13" y="173" width="368" height="46"/>
+                                                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="SB0-ge-RNH" firstAttribute="width" secondItem="NDC-mZ-pRs" secondAttribute="width" id="1hr-oh-mRL"/>
+                                                            <constraint firstAttribute="trailing" secondItem="MO0-HM-KSh" secondAttribute="trailing" constant="5" id="4k8-1h-2yD"/>
+                                                            <constraint firstItem="5gG-TC-fzc" firstAttribute="top" secondItem="ZEb-hu-qut" secondAttribute="top" id="EEQ-ae-h8c"/>
+                                                            <constraint firstItem="NDC-mZ-pRs" firstAttribute="leading" secondItem="ZEb-hu-qut" secondAttribute="leading" constant="8" id="Qp0-NB-iwC"/>
+                                                            <constraint firstItem="5gG-TC-fzc" firstAttribute="leading" secondItem="ZEb-hu-qut" secondAttribute="leading" id="aMV-Hc-nre"/>
+                                                            <constraint firstItem="SB0-ge-RNH" firstAttribute="firstBaseline" secondItem="NDC-mZ-pRs" secondAttribute="baseline" constant="15" id="c37-Ri-KCf"/>
+                                                            <constraint firstAttribute="height" constant="240" id="cnr-Xh-GEO"/>
+                                                            <constraint firstItem="SB0-ge-RNH" firstAttribute="height" secondItem="NDC-mZ-pRs" secondAttribute="height" id="ctQ-Po-xyd"/>
+                                                            <constraint firstItem="SB0-ge-RNH" firstAttribute="centerX" secondItem="NDC-mZ-pRs" secondAttribute="centerX" constant="5" id="fF0-YN-FDN"/>
+                                                            <constraint firstAttribute="trailing" secondItem="NDC-mZ-pRs" secondAttribute="trailing" constant="8" id="hZc-ZL-BPK"/>
+                                                            <constraint firstAttribute="bottom" secondItem="MO0-HM-KSh" secondAttribute="bottom" constant="9" id="mvq-mD-7hX"/>
+                                                            <constraint firstItem="NDC-mZ-pRs" firstAttribute="top" secondItem="5gG-TC-fzc" secondAttribute="bottom" constant="5" id="pBg-Ig-AIz"/>
+                                                            <constraint firstAttribute="trailing" secondItem="5gG-TC-fzc" secondAttribute="trailing" id="ufb-65-ysI"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="oYv-w8-7T4" firstAttribute="top" secondItem="mXu-uZ-qB5" secondAttribute="top" id="02c-vC-FdI"/>
+                                                    <constraint firstAttribute="trailing" secondItem="jlK-hi-0TT" secondAttribute="trailing" id="0b0-Jx-N8E"/>
+                                                    <constraint firstItem="ZEb-hu-qut" firstAttribute="top" secondItem="oYv-w8-7T4" secondAttribute="bottom" constant="35" id="2T1-HL-8fq"/>
+                                                    <constraint firstItem="ZEb-hu-qut" firstAttribute="leading" secondItem="mXu-uZ-qB5" secondAttribute="leading" id="Ccc-4f-zae"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ZEb-hu-qut" secondAttribute="trailing" id="CgM-Ij-aAI"/>
+                                                    <constraint firstItem="oYv-w8-7T4" firstAttribute="centerX" secondItem="mXu-uZ-qB5" secondAttribute="centerX" id="NJT-VR-p6q"/>
+                                                    <constraint firstItem="jlK-hi-0TT" firstAttribute="top" secondItem="ZEb-hu-qut" secondAttribute="bottom" constant="8" id="Wvm-0y-8DU"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5km-90-RAM" customClass="CustomButton" customModule="GuessingGame" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="698" width="384" height="50"/>
+                                                <color key="backgroundColor" red="0.14637109640000001" green="0.74884604649999997" blue="0.89398950340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Lki-2O-EVK"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                                <state key="normal" title="Next Question">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="nextQuesBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Btz-IB-aQM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cTc-Xj-Y4C" customClass="CustomButton" customModule="GuessingGame" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="758" width="384" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="KQO-gW-NJU"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="How I am doing in the ">
+                                                            <attributes>
+                                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <font key="NSFont" size="18" name="GillSans"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="leaderboards">
+                                                            <attributes>
+                                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <font key="NSFont" size="18" name="GillSans-SemiBold"/>
+                                                                <font key="NSOriginalFont" size="18" name="GillSans-SemiBold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="?">
+                                                            <attributes>
+                                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <font key="NSFont" size="18" name="GillSans"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="086-XR-clp" firstAttribute="leading" secondItem="wFN-S2-3uG" secondAttribute="leading" constant="15" id="IXb-1S-xcY"/>
+                                    <constraint firstAttribute="bottom" secondItem="086-XR-clp" secondAttribute="bottom" constant="10" id="KCn-PC-Dhk"/>
+                                    <constraint firstAttribute="trailing" secondItem="086-XR-clp" secondAttribute="trailing" constant="15" id="kxE-Dv-zi7"/>
+                                    <constraint firstItem="086-XR-clp" firstAttribute="top" secondItem="wFN-S2-3uG" secondAttribute="top" id="zbr-0c-bpf"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="rva-eZ-TXR" secondAttribute="bottom" id="9pu-gG-qRP"/>
                             <constraint firstItem="rva-eZ-TXR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="A8H-al-uiX"/>
+                            <constraint firstItem="wFN-S2-3uG" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ELH-M2-W1x"/>
+                            <constraint firstItem="wFN-S2-3uG" firstAttribute="leading" secondItem="Z3q-4k-j0Z" secondAttribute="leading" id="Ex0-lI-66I"/>
+                            <constraint firstItem="wFN-S2-3uG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Hlg-ox-Zrq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Z3q-4k-j0Z" secondAttribute="trailing" id="T95-gt-QRe"/>
                             <constraint firstItem="Z3q-4k-j0Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WQ4-tZ-TJ6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Z3q-4k-j0Z" secondAttribute="bottom" id="YZO-zj-AWR"/>
+                            <constraint firstItem="wFN-S2-3uG" firstAttribute="trailing" secondItem="Z3q-4k-j0Z" secondAttribute="trailing" id="a88-1H-7qZ"/>
                             <constraint firstItem="Z3q-4k-j0Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="adK-y1-2zr"/>
                             <constraint firstItem="rva-eZ-TXR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ct1-xb-b8W"/>
                             <constraint firstItem="rva-eZ-TXR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="s1Z-zx-8WP"/>
@@ -154,10 +435,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="answerBgView" destination="wFN-S2-3uG" id="Cln-q0-d5F"/>
+                        <outlet property="answerHeadlineLbl" destination="NDC-mZ-pRs" id="B8R-WU-OHW"/>
+                        <outlet property="answerImage" destination="5gG-TC-fzc" id="i38-CA-eAs"/>
+                        <outlet property="answerScoreLbl" destination="NCm-46-8Zl" id="Sze-Gb-V7z"/>
+                        <outlet property="answerSectionLbl" destination="MO0-HM-KSh" id="ptd-vK-m7O"/>
+                        <outlet property="firstHeadlineBtn" destination="9cS-2q-1BK" id="aLu-jz-BUF"/>
                         <outlet property="progressBar" destination="pwU-kD-vAe" id="cad-SX-K1Y"/>
                         <outlet property="questionBgView" destination="Z3q-4k-j0Z" id="cbQ-3e-IeV"/>
                         <outlet property="questionImage" destination="tIL-Kb-gNd" id="7pJ-h2-8Ol"/>
                         <outlet property="scoreLabel" destination="3KK-q3-x0m" id="1ux-i5-7Tg"/>
+                        <outlet property="secondHeadlineBtn" destination="vQY-2m-lmI" id="kdv-4f-KZ3"/>
+                        <outlet property="thirdHeadlineBtn" destination="Prn-2p-MMp" id="n39-KK-zXv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -171,13 +460,6 @@
                     <view key="view" contentMode="scaleToFill" id="olI-jz-yuL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3CX-p5-bN7">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="QBc-Ra-Efp"/>
                     </view>

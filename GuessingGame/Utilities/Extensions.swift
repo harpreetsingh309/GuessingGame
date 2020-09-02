@@ -11,6 +11,12 @@ import UIKit
 // MARK: - UIApplication
 extension UIApplication {
     
+    class var scene: UIViewController! {
+        let sceneDelegate = UIApplication.shared.connectedScenes
+            .first!.delegate as! SceneDelegate
+        return sceneDelegate.window?.rootViewController
+    }
+    
     class var appWindow: UIWindow! {
         return (UIApplication.shared.delegate?.window!)!
     }
@@ -66,6 +72,10 @@ extension UIAlertController {
                 }
             }))
         }
-        UIApplication.visibleViewController.present(alertView!, animated: true, completion: nil)
+        if #available(iOS 13.0, *) {
+            UIApplication.scene.present(alertView!, animated: true, completion: nil)
+        } else {
+            UIApplication.visibleViewController.present(alertView!, animated: true, completion: nil)
+        }
     }
 }

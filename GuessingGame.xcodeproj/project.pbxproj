@@ -25,6 +25,8 @@
 		F32C97FA24FE774700C0FFE3 /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = F32C97F924FE774700C0FFE3 /* NVActivityIndicatorViewExtended */; };
 		F32C97FD24FE7E2500C0FFE3 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F32C97FC24FE7E2500C0FFE3 /* SDWebImage */; };
 		F32C97FF24FE7E2500C0FFE3 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F32C97FE24FE7E2500C0FFE3 /* SDWebImageMapKit */; };
+		F335A58924FF37F100B7DB87 /* QuestionBrainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F335A58824FF37F100B7DB87 /* QuestionBrainViewModel.swift */; };
+		F335A58B24FF55B300B7DB87 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F335A58A24FF55B300B7DB87 /* CustomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		F32C97F024FE6F6000C0FFE3 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		F32C97F224FE729600C0FFE3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F32C97F424FE752500C0FFE3 /* QuestionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		F335A58824FF37F100B7DB87 /* QuestionBrainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBrainViewModel.swift; sourceTree = "<group>"; };
+		F335A58A24FF55B300B7DB87 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,7 @@
 				F32C97E924FE649F00C0FFE3 /* CustomButton.swift */,
 				F32C97F024FE6F6000C0FFE3 /* Alert.swift */,
 				F32C97F224FE729600C0FFE3 /* Constants.swift */,
+				F335A58A24FF55B300B7DB87 /* CustomView.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 		F32C97E624FE345000C0FFE3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F335A58824FF37F100B7DB87 /* QuestionBrainViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -261,6 +267,8 @@
 				F32C97F324FE729600C0FFE3 /* Constants.swift in Sources */,
 				F32C97EA24FE649F00C0FFE3 /* CustomButton.swift in Sources */,
 				F32C97C724FDD91A00C0FFE3 /* AppDelegate.swift in Sources */,
+				F335A58924FF37F100B7DB87 /* QuestionBrainViewModel.swift in Sources */,
+				F335A58B24FF55B300B7DB87 /* CustomView.swift in Sources */,
 				F32C97C924FDD91A00C0FFE3 /* SceneDelegate.swift in Sources */,
 				F32C97E224FE301A00C0FFE3 /* AbstractController.swift in Sources */,
 			);
